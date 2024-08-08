@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider |Dev Mode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ------------------------section 1----------------------- -->
+
+<section class="section section-1">
+    <div class="section-1-content">
+        <div class="left-content">
+            <p>Integral University</p>
+        </div>
+        <div class="right-content">
+            <i class="fas fa-phone-alt"></i> 123-456-7890 &nbsp;
+            <i class="fas fa-envelope"></i> info@iul.ac.in
+        </div>
+    </div>
+</section>
+
+<!------------------------- section 2-------------------------- -->
+
+<section class="section section-2">
+    <div class="section-2-content">
+        <p>Faculty of Engineering & Information Technology</p>
+    </div>
+</section>
+
+<!---------------------- section 3---------------------------------- -->
+
+<nav class="navbar">
+    <ul class="section-3-content" id="nav-menu">
+        <li class="nav-item">
+            <a href="#" class="home">HOME</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="s31">ABOUT</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Mission</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="s32">PROGRAM</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Our Programs</a></li>
+                <li><a href="#">Program Details</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="s33">PEOPLE</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+        &#9776; <!-- Hamburger icon -->
+    </div>
+</nav>
+<!--------------------------- section 4---------------------------- -->
+
+<section class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="sweeperCard swiper-slide">
+        <div class="card__image">
+          <img src="images/11.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Web Designer</span>
+          <span class="card__name">Vanessa Martinez</span>
+          <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+          <button class="card__btn">View More</button>
+        </div>
+      </div>
+
+      <div class="sweeperCard swiper-slide">
+        <div class="card__image">
+          <img src="images/12.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Ui Designer</span>
+          <span class="card__name">Sarah Bowen</span>
+          <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+          <button class="card__btn">View More</button>
+        </div>
+      </div>
+
+      <div class="sweeperCard swiper-slide">
+        <div class="card__image">
+          <img src="images/13.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Web Developer</span>
+          <span class="card__name">David Murphy</span>
+          <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+          <button class="card__btn">View More</button>
+        </div>
+      </div>
+
+      <div class="sweeperCard swiper-slide">
+        <div class="card__image">
+          <img src="images/11.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Mobile Design<span>
+          <span class="card__name">Kelsey West</span>
+          <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+          <button class="card__btn">View More</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+<!-- ----------------section 5--------------------- -->
+
+<section class="section section-5">
+    <div class="c5left-content">
+        <h2>Welcome to Our Website</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+             vulputate est nec diam facilisis, sed fermentum orci fermentum. Curabitur 
+             imperdiet feugiat orci at tincidunt. Mauris consectetur erat a urna fermentu
+             m, non gravida purus gravida. Praesent a neque eu lorem interdum tempor. Nul
+             la facilisi. Cras et purus ut orci aliquam blandit. Phasellus dapibus suscipit
+              nulla ut lacinia. Integer et nisl lacus. Ut ac ultrices felis, sed bibendum purus.
+        </p>
+    </div>
+    <div class="c5right-content">
+        <div class="news-announcements-container">
+            <h3>NOTICES: OFFICE OF DEEN</h3>
+            <div class="news-announcements">
+                <ul>
+                    <li>
+                        <div class="date">
+                            <i class="icon">📅</i> 2024-08-01
+                        </div>
+                        <a href="#" class="announcement">Announcement 1: Lorem ipsum dolor sit amet.</a>
+                    </li>
+                    <li>
+                        <div class="date">
+                            <i class="icon">📅</i> 2024-08-02
+                        </div>
+                        <a href="#" class="announcement">Announcement 2: Curabitur imperdiet feugiat orci at tincidunt.</a>
+                    </li>
+                    <li>
+                        <div class="date">
+                            <i class="icon">📅</i> 2024-08-03
+                        </div>
+                        <a href="#" class="announcement">Announcement 3: Praesent a neque eu lorem interdum tempor.</a>
+                    </li>
+                    <li>
+                        <div class="date">
+                            <i class="icon">📅</i> 2024-08-04
+                        </div>
+                        <a href="#" class="announcement">Announcement 4: Nulla facilisi. Cras et purus ut orci aliquam blandit.</a>
+                    </li>
+                    <li>
+                        <div class="date">
+                            <i class="icon">📅</i> 2024-08-05
+                        </div>
+                        <a href="#" class="announcement">Announcement 5: Phasellus dapibus suscipit nulla ut lacinia.</a>
+                    </li>
+                    <li>
+                        <div class="date">
+                            <i class="icon">📅</i> 2024-08-06
+                        </div>
+                        <a href="#" class="announcement">Announcement 6: Integer et nisl lacus.</a>
+                    </li>
+                    <li>
+                        <div class="date">
+                            <i class="icon">📅</i> 2024-08-07
+                        </div>
+                        <a href="#" class="announcement">Announcement 7: Ut ac ultrices felis, sed bibendum purus.</a>
+                    </li>
+                    <!-- Add more items as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- -------------------------------section6---------------------------------- -->
+
+  <section class="container">
+    <div class="card__container swiper">
+       <div class="card__content">
+          <div class="swiper-wrapper">
+             <article class="card__article swiper-slide">
+                <div class="card__image">
+                   <img src="images/11.jpg" alt="image" class="card__img">
+                   <div class="card__shadow"></div>
+                </div>
+ 
+                <div class="card__data">
+                   <h3 class="card__name">Kell Dawx</h3>
+                   <p class="card__description">
+                      Passionate about development and design, 
+                      I carry out projects at the request of users.
+                   </p>
+ 
+                   <a href="#" class="card__button">View More</a>
+                </div>
+             </article>
+ 
+             <article class="card__article swiper-slide">
+                <div class="card__image">
+                   <img src="images/12.jpg" alt="image" class="card__img">
+                   <div class="card__shadow"></div>
+                </div>
+ 
+                <div class="card__data">
+                   <h3 class="card__name">Lotw Fox</h3>
+                   <p class="card__description">
+                      Passionate about development and design, 
+                      I carry out projects at the request of users.
+                   </p>
+ 
+                   <a href="#" class="card__button">View More</a>
+                </div>
+             </article>
+ 
+             <article class="card__article swiper-slide">
+                <div class="card__image">
+                   <img src="images/13.jpg" alt="image" class="card__img">
+                   <div class="card__shadow"></div>
+                </div>
+ 
+                <div class="card__data">
+                   <h3 class="card__name">Sara Mit</h3>
+                   <p class="card__description">
+                      Passionate about development and design, 
+                      I carry out projects at the request of users.
+                   </p>
+ 
+                   <a href="#" class="card__button">View More</a>
+                </div>
+             </article>
+ 
+             <article class="card__article swiper-slide">
+                <div class="card__image">
+                   <img src="images/11.jpg" alt="image" class="card__img">
+                   <div class="card__shadow"></div>
+                </div>
+ 
+                <div class="card__data">
+                   <h3 class="card__name">Jenny Wert</h3>
+                   <p class="card__description">
+                      Passionate about development and design, 
+                      I carry out projects at the request of users.
+                   </p>
+ 
+                   <a href="#" class="card__button">View More</a>
+                </div>
+             </article>
+
+             <article class="card__article swiper-slide">
+                <div class="card__image">
+                   <img src="images/11.jpg" alt="image" class="card__img">
+                   <div class="card__shadow"></div>
+                </div>
+ 
+                <div class="card__data">
+                   <h3 class="card__name">Lexa Kin</h3>
+                   <p class="card__description">
+                      Passionate about development and design, 
+                      I carry out projects at the request of users.
+                   </p>
+ 
+                   <a href="#" class="card__button">View More</a>
+                </div>
+             </article>
+          </div>
+       </div>
+
+       <!-- Navigation buttons -->
+       <div class="swiper-button-next">
+          <i class="ri-arrow-right-s-line"></i>
+       </div>
+       
+       <div class="swiper-button-prev">
+          <i class="ri-arrow-left-s-line"></i>
+       </div>
+
+       <!-- Pagination -->
+       <div class="swiper-pagination"></div>
+    </div>
+ </section>
+
+ <!----------------------- section7------------------------- -->
+ 
+ <section class="s7section-7">
+    <h1>USEFUL LINKS</h1>
+    <p class="s7subheading">Upcoming. Interesting. Engaging.</p>
+    <div class="s7cards-container">
+        <!-- Card 1 -->
+        <div class="s7card">
+            <img src="images/8.avif" alt="Event Image 1" class="s7card-image">
+            <div class="s7card-text">
+                <h2>TED TALK LINK 1</h2>
+                <p class="s7card-date">
+                    <i class="fas fa-calendar-alt"></i> From 2024-08-01 to 2024-08-07
+                </p>
+                <p>Event description goes here. It should be concise and informative.</p>
+                <a href="event1.html" class="s7button">Learn More</a>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="s7card">
+            <img src="images/7.avif" alt="Event Image 2" class="s7card-image">
+            <div class="s7card-text">
+                <h2>CARRER GROWTH LINK</h2>
+                <p class="s7card-date">
+                    <i class="fas fa-calendar-alt"></i> From 2024-08-08 to 2024-08-14
+                </p>
+                <p>Event description goes here. It should be concise and informative.</p>
+                <a href="event2.html" class="s7button">Learn More</a>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="s7card">
+            <img src="images/8.avif" alt="Event Image 3" class="s7card-image">
+            <div class="s7card-text">
+                <h2>SOME YOUTUBE LINK</h2>
+                <p class="s7card-date">
+                    <i class="fas fa-calendar-alt"></i> From 2024-08-15 to 2024-08-21
+                </p>
+                <p>Event description goes here. It should be concise and informative.</p>
+                <a href="event3.html" class="s7button">Learn More</a>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="s7card">
+            <img src="images/9.avif" alt="Event Image 4" class="s7card-image">
+            <div class="s7card-text">
+                <h2>EVENT GROWTH</h2>
+                <p class="s7card-date">
+                    <i class="fas fa-calendar-alt"></i> From 2024-08-22 to 2024-08-28
+                </p>
+                <p>Event description goes here. It should be concise and informative.</p>
+                <a href="event4.html" class="s7button">Learn More</a>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="s7card">
+            <img src="images/7.avif" alt="Event Image 5" class="s7card-image">
+            <div class="s7card-text">
+                <h2>MORE LINKS</h2>
+                <p class="s7card-date">
+                    <i class="fas fa-calendar-alt"></i> From 2024-08-29 to 2024-09-04
+                </p>
+                <p>Event description goes here. It should be concise and informative.</p>
+                <a href="event5.html" class="s7button">Learn More</a>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="s7card">
+            <img src="images/9.avif" alt="Event Image 6" class="s7card-image">
+            <div class="s7card-text">
+                <h2>SOME MORE LINKS</h2>
+                <p class="s7card-date">
+                    <i class="fas fa-calendar-alt"></i> From 2024-09-05 to 2024-09-11
+                </p>
+                <p>Event description goes here. It should be concise and informative.</p>
+                <a href="event6.html" class="s7button">Learn More</a>
+            </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="s7card">
+            <img src="images/7.avif" alt="Event Image 7" class="s7card-image">
+            <div class="s7card-text">
+                <h2>AGAIN LINKS</h2>
+                <p class="s7card-date">
+                    <i class="fas fa-calendar-alt"></i> From 2024-09-12 to 2024-09-18
+                </p>
+                <p>Event description goes here. It should be concise and informative.</p>
+                <a href="event7.html" class="s7button">Learn More</a>
+            </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="s7card">
+            <img src="images/7.avif" alt="Event Image 8" class="s7card-image">
+            <div class="s7card-text">
+                <h2>SO MUCH LINKS</h2>
+                <p class="s7card-date">
+                    <i class="fas fa-calendar-alt"></i> From 2024-09-19 to 2024-09-25
+                </p>
+                <p>Event description goes here. It should be concise and informative.</p>
+                <a href="event8.html" class="s7button">Learn More</a>
+            </div>
+        </div>
+        <!-- Repeat ends -->
+    </div>
+</section>
+
+ <!-------------------------- section8------------------------------- -->
+
+ <section class="section section-8">
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>CONTACT US</h2>
+                <p><i class="fas fa-phone-alt"></i> +91 6390011283, 6390011284, 6390011285</p>
+                <p style="margin-top: 10px;"><i class="fas fa-envelope"></i> info@iul.ac.in</p>
+            </div>
+            <div class="footer-column">
+                <h2>ABOUT US</h2>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Vision & Mission</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>USEFUL LINKS</h2>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">HELPDESK</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>FOLLOW US</h2>
+                <p>
+                    <a href="#">Facebook</a> |
+                    <a href="#">Twitter</a> |
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="s8footer-left">Copyright © <a href="#" class="sitecolor">Integral University</a> </p>
+            <p class="s8footer-right">Designed & Developed By: <span class="cellcolor" style="color: yellow;">Software Development Cell</span></p>
+        </div>
+    </footer>
+</section>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="main.js"></script>
+ 
+
+</body>
+</html>
